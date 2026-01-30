@@ -9,7 +9,17 @@ import exo17.CountWords;
 import exo18.LongestWord;
 import exo19.ArrayAverage;
 import exo2.MaxArray;
+import exo21.CountChar;
+import exo22.LongestIncreasingArray;
+import exo23.IsAnagram;
+import exo24.CountUnique;
+import exo25.SmallestMissing;
+import exo26.Power;
+import exo27.ArrayEven;
+import exo28.ArrayMedian;
+import exo29.ArrayFrequent;
 import exo3.PrimeNumber;
+import exo30.IsPerfectSquare;
 import exo4.CharOccurs;
 import exo5.InstanceDeClasse;
 import exo6.ArraySum;
@@ -155,7 +165,73 @@ public class Main {
         System.out.println("The average of the array is: " + ArrayAverage.ArrayAverage(array));
         */
 
+        /*
+        CountChar.run();
+        String s = "hello world";
+        char c = 'o';
+        System.out.println("The character " + c + " occurs " + CountChar.CountCharInString(s,c) + " times in the string \"" + s + "\".");
 
+        System.out.println("Comptage de tous les caractères dans une chaîne:");
+        System.out.println(s);
+        CountChar.CountCharsInString(s);
+
+         */
+
+        /*
+        LongestIncreasingArray.run();
+        int[] arr = {10, 22, 9, 33, 21, 50, 41, 60, 80};
+        System.out.println("The length of the longest increasing subsequence is: " + LongestIncreasingArray.longestIncreasing(arr));
+        */
+
+        /*
+        IsAnagram.run();
+        String s1 = "listen";
+        String s2 = "silent";
+        System.out.println("Are \"" + s1 + "\" and \"" + s2 + "\" anagrams? " + IsAnagram.isAnagram(s1, s2));
+        */
+
+        /*
+        CountUnique.run();
+        int[] array = {1, 2, 2, 3, 4, 4, 5};
+        System.out.println("The number of unique elements in the array is: " + CountUnique.CountUnique(array));
+        */
+
+        /*
+        SmallestMissing.run();
+        int[] array = {1, 2, 3, 5};
+        System.out.println("The smallest missing positive integer is: " + SmallestMissing.SmallestMissing(array));
+        */
+
+        /*
+        Power.run();
+        int base = 2;
+        int exponent = 3;
+        System.out.println(base + " raised to the power of " + exponent + " is: " + Power.power(base, exponent));
+        */
+
+        /*
+        ArrayEven.run();
+        int [] array = {1, 2, 3, 4, 5, 6};
+        ArrayEven.ArrayEven(array);
+        */
+
+        /*
+        ArrayMedian.run();
+        int[] array = {3, 1, 4, 2, 5};
+        System.out.println("The median of the array is: " + ArrayMedian.ArrayMedian(array));
+        */
+
+        /*
+        ArrayFrequent.run();
+        int [] array = {1, 2, 3, 3, 3,  4, 4, 5, 6};
+        System.out.println("The most Frequent int the array is " + ArrayFrequent.mode(array));
+         */
+
+        /*
+        IsPerfectSquare.run();
+        int n = 25;
+        System.out.println("L'entier : "+ n + " est t'il un carré parfait ? : " + IsPerfectSquare.IsPerfectSquare(n));
+        */
 
     }
 }
