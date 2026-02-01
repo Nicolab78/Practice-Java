@@ -20,7 +20,17 @@ import exo28.ArrayMedian;
 import exo29.ArrayFrequent;
 import exo3.PrimeNumber;
 import exo30.IsPerfectSquare;
+import exo31.CountDigits;
+import exo32.LargestPalindrome;
+import exo33.CountUpperCase;
+import exo34.SumEven;
+import exo35.MostFrequent;
+import exo36.IsNumeric;
+import exo37.FindProduct;
+import exo38.CountGreaterThan;
+import exo39.SmallestEven;
 import exo4.CharOccurs;
+import exo40.EqualArray;
 import exo5.InstanceDeClasse;
 import exo6.ArraySum;
 import exo7.Factorial;
@@ -231,6 +241,68 @@ public class Main {
         IsPerfectSquare.run();
         int n = 25;
         System.out.println("L'entier : "+ n + " est t'il un carré parfait ? : " + IsPerfectSquare.IsPerfectSquare(n));
+        */
+
+        /*
+        CountDigits.run();
+        int n = 123456;
+        System.out.println("Number of digits in " + n + " is : " + CountDigits.CountDigits(n));
+        */
+
+        /*
+        LargestPalindrome.run();
+        int[] arr = {121, 44, 989, 10};
+        System.out.println("The largest palindrome is : " + LargestPalindrome.LargestPalindrome(arr));
+         */
+
+        /*
+        CountUpperCase.run();
+        String s = "AaaaBbbbCccc";
+        System.out.println("The number of uppercase in the string is : " + CountUpperCase.CountUpperCase(s));
+         */
+
+        /*
+        SumEven.run();
+        int[] arr = {121, 44, 989, 10};
+        System.out.println("The number of even numbers is : " + SumEven.CountEven(arr));
+        */
+
+        /*
+        MostFrequent.run();
+        int[] arr = {1, 1, 1, 2, 2, 3, 3, 3, 3};
+        System.out.println("The most frequent int is " + MostFrequent.mostFrequent(arr));
+         */
+
+        /*
+        IsNumeric.run();
+        String str = "1236572168";
+        System.out.println("Is the string a digit ? : " + IsNumeric.IsNumeric(str));
+         */
+
+        /*
+        FindProduct.run();
+        int[] arr = {2, 3, 4};
+        System.out.println("The products in the array are : " + FindProduct.FindProduct(arr));
+         */
+
+        /*
+        CountGreaterThan.run();
+        int[] arr = {1, 1, 1, 2, 2, 3, 3, 3, 3};
+        int value = 2;
+        System.out.println("The nombre d'élément supérieur à "+ value +  " est : " + CountGreaterThan.CountGreaterThan(arr,value));
+         */
+
+        /*
+        SmallestEven.run();
+        int[] arr = {2, 3, 4, 5, 6, 7, 8, 9};
+        System.out.println("The smallest even is : " + SmallestEven.SmallestEven(arr));
+        */
+
+        /*
+        EqualArray.run();
+        int [] a = {2, 3, 4};
+        int [] b = {2, 3, 4};
+        System.out.println("Are the array equal ? : " + EqualArray.EqualArray(a,b));
         */
 
     }
