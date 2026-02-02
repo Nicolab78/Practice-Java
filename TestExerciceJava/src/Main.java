@@ -1,60 +1,41 @@
 import exo1.ReverseString;
 import exo10.FusionArray;
-import exo11.MinArray;
-import exo12.CountVowels;
-import exo14.ArrayReverse;
-import exo15.IsArraySorted;
-import exo16.SecondLargest;
-import exo17.CountWords;
-import exo18.LongestWord;
-import exo19.ArrayAverage;
 import exo2.MaxArray;
-import exo21.CountChar;
-import exo22.LongestIncreasingArray;
-import exo23.IsAnagram;
-import exo24.CountUnique;
-import exo25.SmallestMissing;
-import exo26.Power;
-import exo27.ArrayEven;
-import exo28.ArrayMedian;
-import exo29.ArrayFrequent;
-import exo3.PrimeNumber;
-import exo30.IsPerfectSquare;
-import exo31.CountDigits;
-import exo32.LargestPalindrome;
-import exo33.CountUpperCase;
-import exo34.SumEven;
-import exo35.MostFrequent;
-import exo36.IsNumeric;
-import exo37.FindProduct;
-import exo38.CountGreaterThan;
-import exo39.SmallestEven;
 import exo4.CharOccurs;
-import exo40.EqualArray;
-import exo5.InstanceDeClasse;
+import exo44.ArrayContains;
+import exo45.ReverseInt;
+import exo46.IsPangram;
+import exo47.IndexOfMax;
+import exo48.MergeString;
+import exo49.UniqueChars;
+import exo50.Variance;
 import exo6.ArraySum;
 import exo7.Factorial;
 import exo8.Palindrome;
 import exo9.IndexOf;
 
-import java.io.PrintStream;
 import java.util.Arrays;
-
-import static exo1.ReverseString.reverse;
 
 public class Main {
     public static void main(String[]args){
         System.out.println("Test marche");
+
         /*
         ReverseString.run();
-        System.out.println(reverse("Hello World"));
+        System.out.println(ReverseString.reverse("Hello World"));
+
+        System.out.println(ReverseString.reversefonct("Hello World")); // prog fontionnelle
         */
+
 
         /*
         MaxArray.run();
         int[] array = {1,5,3,9,2};
         System.out.println(MaxArray.MaxArray(array));
-         */
+
+
+        System.out.println(MaxArray.MaxArrayfonct(array)); // prog fontionnelle
+        */
 
         /*
         PrimeNumber.run();
@@ -67,23 +48,32 @@ public class Main {
         String s = "hello world";
         char c = 'o';
         System.out.println("The character " + c + " occurs " + CharOccurs.countChar(s,c) + " times in the string \"" + s + "\".");
-        */
 
+        System.out.println("The character " + c + " occurs " + CharOccurs.countCharfonct(s,c) + " times in the string \"" + s + "\"."); // prog fonctionnelle
+
+        */
 
         /*
         InstanceDeClasse.run();
         */
 
         /*
+
         ArraySum.run();
         int[] array = {1,2,3,4,5};
         System.out.println("The sum of the array is: " + ArraySum.ArraySum(array));
+
+         System.out.println("The sum of the array is: " + ArraySum.ArraySumfonct(array)); // prog fonctionnelle
+
         */
+
 
         /*
         Factorial.run();
         int n = 5;
         System.out.println("Factorial of " + n + " is: " + Factorial.Factorial(n));
+
+        System.out.println("Factorial of " + n + " is: " + Factorial.Factorialfonct(n)); // prog fonctionnelle
         */
 
 
@@ -91,17 +81,22 @@ public class Main {
         Palindrome.run();
         String str = "radar";
         System.out.println("Is the string \"" + str + "\" a palindrome? " + Palindrome.isPalindrome(str));
+
+        System.out.println("Is the string \"" + str + "\" a palindrome? " + Palindrome.isPalindromefonct(str)); // prog fonctionnelle
         */
+
 
         /*
         IndexOf.run();
         String s = "hello world";
         char c = 'h';
         System.out.println("The character " + c + " is found at index: " + IndexOf.IndexOf(s,c));
+
+        System.out.println("The character " + c + " is found at index: " + IndexOf.indexOffonc(s,c)); // prog fonctionnelle
         */
 
-
         /*
+
         FusionArray.run();
 
         int[] array1 = {1, 3, 5};
@@ -113,7 +108,17 @@ public class Main {
             System.out.print(i + " ");
         }
 
+        int[] mergedfonc = FusionArray.mergefonc(array1, array2); // // prog fonctionnelle
+        System.out.print(" fonc Merged array: ");
+        for (int i : merged) {
+            System.out.print(i + " ");
+        }
+
          */
+
+
+
+
 
         /*
         MinArray.run();
@@ -304,6 +309,73 @@ public class Main {
         int [] b = {2, 3, 4};
         System.out.println("Are the array equal ? : " + EqualArray.EqualArray(a,b));
         */
+
+        /*
+        SumOdd.run();
+        int[] arr = {2, 3, 4, 5, 6, 7, 8, 9};
+        System.out.println("The sum of the odd numbers in the array is : " + SumOdd.SumOdd(arr));
+        */
+
+        /*
+        RotateRight.run();
+        int[] arr = {2, 3, 4, 5, 6, 7, 8, 9};
+        int [] rotated = RotateRight.RotateRight(arr);
+        for ( int i : rotated){
+            System.out.print(i + " ");
+        }
+         */
+
+        /*
+        PGCD.run();
+        int a = 25;
+        int b = 15;
+        System.out.println("The gcd of " + a + " and " + b + " is " + PGCD.PGCD(a,b));
+        */
+
+        /*
+        ArrayContains.run();
+        int[] arr = {2, 3, 4, 5, 6, 7, 8, 9};
+        int value = 2;
+        System.out.println("Does the array contains " + value + " ? :" + ArrayContains.ArrayContains(arr, value));
+         */
+
+        /*
+        ReverseInt.run();
+        int a = 12345;
+        System.out.println("Reverse of " + a + " is :" + ReverseInt.ReverseInt(a));
+        */
+
+        /*
+        IsPangram.run();
+        String string = "The quick brown fox jumps over the lazy dog";
+        System.out.println("Is the String: "+string + " a pangram ? : " + IsPangram.IsPangram(string));
+        */
+
+        /*
+        IndexOfMax.run();
+        int[] arr = {2, 3, 4, 5, 6, 7, 8, 9};
+        System.out.println("The max index is : " + IndexOfMax.indexOfMax(arr));
+        */
+
+        /*
+        MergeString.run();
+        String a = "abc";
+        String b = "efg";
+        System.out.println("Merge String : " + MergeString.MergeString(a,b));
+        */
+
+        /*
+        UniqueChars.run();
+        String string = "hello world";
+        System.out.println("The number of unique char in " + string + " is : " + UniqueChars.UniqueChar(string) );
+        */
+
+        /*
+        Variance.run();
+        int[] arr = {2, 3, 4, 5, 6, 7, 8, 9};
+        System.out.println("The Variance of the array is : " + Variance.variance(arr));
+         */
+
 
     }
 }
